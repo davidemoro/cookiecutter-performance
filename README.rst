@@ -26,7 +26,26 @@ How to use it::
     $ cd my_project
     $ tox -epy36 -- example_yml.yml
 
-Blazemeter ready
+where the generated ``example_yml`` has the following content::
+
+    ---
+    execution:
+    - scenario: index
+      concurrency: 2
+      hold-for: 1m
+      ramp-up: 30s
+    scenarios:
+      index:
+        default-address: https://www.blazemeter.com/
+        requests:
+          - url: /
+            method: GET
+    modules:
+      cloud:
+        project: my project
+
+You can launch performance tests on your PC or against the BlazeMeter_ cloud since we are using Taurus_ and
+you can use any supported performance framework or technology supported by Taurus_.
 
 Twitter
 =======
@@ -43,3 +62,5 @@ Based on
 
 
 .. _`@davidemoro`: https://twitter.com/davidemoro
+.. _`BlazeMeter`: https://www.blazemeter.com/
+.. _`Taurus`: https://gettaurus.org/
