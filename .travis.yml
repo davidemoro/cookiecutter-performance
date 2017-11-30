@@ -1,0 +1,14 @@
+language: python
+cache: pip
+sudo: required
+python: 3.6
+services:
+- docker
+env:
+  matrix:
+  - TOXENV=py36
+install:
+- pip install -U tox
+- pip install tox-travis
+script:
+- tox
