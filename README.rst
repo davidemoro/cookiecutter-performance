@@ -9,6 +9,9 @@ Generate a tox based environment based on Taurus bzt for performance test. Blaze
           :target: https://travis-ci.org/tierratelematics/cookiecutter-performance
           :alt: Build Status
 
+This package generates a performance test project containing a working hello world test choosing one
+of the supported technologies with no pain.
+
 How to use it::
 
     $ pip install cookiecutter
@@ -47,10 +50,13 @@ where the generated ``example_yml`` has the following content::
 You can launch performance tests on your PC or against the BlazeMeter_ cloud since we are using Taurus_ and
 you can use any supported performance framework or technology supported by Taurus_.
 
+At the moment we support only the ``yaml`` executor but we are going to implement other ones.
+Feel free to contribute adding more implementations.
+
 Twitter
 =======
 
-cookiecutter-qa tweets happens here:
+cookiecutter-performance tweets happens here:
 
 * `@davidemoro`_
 
