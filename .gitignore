@@ -102,3 +102,6 @@ ENV/
 
 # python (virtualenv)
 python/
+
+# Vim stuff
+*.swp
