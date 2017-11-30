@@ -81,10 +81,14 @@ def test_bake_with_defaults(cookies):
         assert 'requirements.txt' in found_toplevel_files
         assert 'tox.ini' in found_toplevel_files
         assert 'example_yml.yml' in found_toplevel_files
+        assert 'README.rst' in found_toplevel_files
 
         assert 'example_jmeter.yml' not in found_toplevel_files
         assert 'example_locust.yml' not in found_toplevel_files
         assert 'example_molotov.yml' not in found_toplevel_files
+
+        readme_rst = result.project.join('README.rst')
+        assert 'project name' in readme_rst.read()
 
         example_yml = result.project.join('example_yml.yml')
         assert 'project name' in example_yml.read()
@@ -101,10 +105,14 @@ def test_bake_with_defaults_extra_context(cookies, default_extra_context):
         assert 'requirements.txt' in found_toplevel_files
         assert 'tox.ini' in found_toplevel_files
         assert 'example_yml.yml' in found_toplevel_files
+        assert 'README.rst' in found_toplevel_files
 
         assert 'example_jmeter.yml' not in found_toplevel_files
         assert 'example_locust.yml' not in found_toplevel_files
         assert 'example_molotov.yml' not in found_toplevel_files
+
+        readme_rst = result.project.join('README.rst')
+        assert default_extra_context['project_name'] in readme_rst.read()
 
         example_yml = result.project.join('example_yml.yml')
         assert default_extra_context['project_name'] in example_yml.read()
