@@ -88,3 +88,23 @@ def test_bake_with_defaults(cookies):
 
         example_yml = result.project.join('example_yml.yml')
         assert 'project name' in example_yml.read()
+
+
+def test_bake_with_defaults_extra_context(cookies, default_extra_context):
+    extra_context = default_extra_context.copy()
+    with bake_in_temp_dir(cookies, extra_context=extra_context) as result:
+        assert result.project.isdir()
+        assert result.exit_code == 0
+        assert result.exception is None
+
+        found_toplevel_files = [f.basename for f in result.project.listdir()]
+        assert 'requirements.txt' in found_toplevel_files
+        assert 'tox.ini' in found_toplevel_files
+        assert 'example_yml.yml' in found_toplevel_files
+
+        assert 'example_jmeter.yml' not in found_toplevel_files
+        assert 'example_locust.yml' not in found_toplevel_files
+        assert 'example_molotov.yml' not in found_toplevel_files
+
+        example_yml = result.project.join('example_yml.yml')
+        assert default_extra_context['project_name'] in example_yml.read()
