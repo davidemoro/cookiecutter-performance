@@ -108,3 +108,13 @@ def test_bake_with_defaults_extra_context(cookies, default_extra_context):
 
         example_yml = result.project.join('example_yml.yml')
         assert default_extra_context['project_name'] in example_yml.read()
+
+
+def test_bake_with_defaults_run_tests(cookies):
+    with bake_in_temp_dir(cookies) as result:
+        assert result.project.isdir()
+        assert result.exit_code == 0
+        assert result.exception is None
+
+        run_inside_dir(
+            'tox -epy36 -- example_yml.yml', str(result.project)) == 0
