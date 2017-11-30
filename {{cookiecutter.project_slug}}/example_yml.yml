@@ -1,0 +1,15 @@
+---
+execution:
+- scenario: index
+  concurrency: 2
+  hold-for: 2m
+  ramp-up: 1m
+scenarios:
+  index:
+    default-address: https://www.blazemeter.com/
+    requests:
+      - url: /
+        method: GET
+modules:
+  cloud:
+    project: {{ cookiecutter.project_name }}
