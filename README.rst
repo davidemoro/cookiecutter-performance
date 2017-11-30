@@ -26,6 +26,11 @@ How to use it::
     molotov [n]: 
     locust [n]: 
     jmeter [n]:
+    $ ls -1 my_project
+    example_yml.yml
+    README.rst
+    requirements.txt
+    tox.ini
     $ cd my_project
     $ tox -epy36 -- example_yml.yml
 
