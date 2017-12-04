@@ -9,6 +9,14 @@ Generate a tox based environment based on Taurus_ for performance test. BlazeMet
           :target: https://travis-ci.org/tierratelematics/cookiecutter-performance
           :alt: Build Status
 
+.. image:: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/shield.svg
+     :target: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/
+     :alt: Updates
+
+.. image:: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/python-3-shield.svg
+     :target: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/
+     :alt: Python 3
+
 This package generates a performance test project containing a working hello world test choosing one
 of the supported technologies with no pain.
 
