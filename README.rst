@@ -2,7 +2,7 @@
 cookiecutter-performance
 ========================
 
-Generate a tox based environment based on Taurus bzt for performance test. BlazeMeter ready
+Generate a tox based environment based on Taurus_ for performance test. BlazeMeter_ ready
 
 
 .. image:: https://travis-ci.org/tierratelematics/cookiecutter-performance.svg?branch=develop
@@ -59,6 +59,9 @@ you can use any supported performance framework or technology supported by Tauru
 
 At the moment we support only the ``yaml`` executor but we are going to implement other ones.
 Feel free to contribute adding more implementations.
+
+
+.. image:: https://raw.githubusercontent.com/tierratelematics/cookiecutter-performance/develop/docs/_static/bzt.png
 
 
 How to launch tests
