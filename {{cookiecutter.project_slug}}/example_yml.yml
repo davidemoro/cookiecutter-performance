@@ -1,11 +1,11 @@
 ---
 execution:
-- scenario: index
+- scenario: example
   concurrency: 2
   hold-for: 1m
   ramp-up: 30s
 scenarios:
-  index:
+  example:
     default-address: https://www.blazedemo.com/
     requests:
       - url: /

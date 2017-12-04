@@ -1,10 +1,9 @@
 execution:
 - executor: locust
   concurrency: 2
-  ramp-up: 1m
-  iterations: 1000
+  hold-for: 1m
+  ramp-up: 30s
   scenario: example
-
 scenarios:
   example:
     default-address: https://blazedemo.com
