@@ -1,20 +1,20 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "e4b43a9b22c2dc4e40ab0fdb3cd31e575fe0d624519d9afd54dfc85c1a18e5dd"
+            "sha256": "c5f85d3ebb9d21e1a73ef64e1e8321b5a25e3a3969ffdffdb93e161844c185e9"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
-            "implementation_version": "0",
+            "implementation_version": "3.6.1",
             "os_name": "posix",
             "platform_machine": "x86_64",
             "platform_python_implementation": "CPython",
             "platform_release": "4.10.0-40-generic",
             "platform_system": "Linux",
             "platform_version": "#44-Ubuntu SMP Thu Nov 9 14:49:09 UTC 2017",
-            "python_full_version": "2.7.13",
-            "python_version": "2.7",
-            "sys_platform": "linux2"
+            "python_full_version": "3.6.1",
+            "python_version": "3.6",
+            "sys_platform": "linux"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -43,10 +43,10 @@
         },
         "backports.functools-lru-cache": {
             "hashes": [
-                "sha256:c10a000d2631878746fdee3c90c559206772d9a8b92ab9d8668e1b88d4c0dcaa",
-                "sha256:1c20e07f1a8a36a19d5d258b6b076e588d78d8fc7c2c4487ffe3a280f55a7bd1"
+                "sha256:4ba998e881f285c1d1b73f5b6e3766539b4e162320f9589334400c5ddc35198c",
+                "sha256:31f235852f88edc1558d428d890663c49eb4514ffec9f3650e7f3c9e4a12e36f"
             ],
-            "version": "==1.2.1"
+            "version": "==1.4"
         },
         "binaryornot": {
             "hashes": [
