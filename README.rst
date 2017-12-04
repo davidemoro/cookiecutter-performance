@@ -29,11 +29,12 @@ How to use it::
     $ ls -1 my_project
     example_yml.yml
     README.rst
-    requirements.txt
+    Pipfile
+    Pipfile.lock
     tox.ini
+    ...
     $ cd my_project
-    $ pip install tox
-    $ tox -epy36 -- example_yml.yml
+    $ pipenv run tox -epy36 -- example_yml.yml
 
 where the generated ``example_yml`` has the following content::
 
