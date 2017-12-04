@@ -7,10 +7,6 @@ name = "pypi"
 
 [dev-packages]
 
-
-
-[packages]
-
 funcsigs = "==1.0.2"
 "urllib3" = "==1.22"
 cookiecutter = "==1.6.0"
@@ -36,3 +32,7 @@ requests = "==2.18.4"
 certifi = "==2017.11.5"
 idna = "==2.6"
 whichcraft = "==0.4.1"
+
+
+[packages]
+

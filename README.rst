@@ -59,6 +59,14 @@ you can use any supported performance framework or technology supported by Tauru
 At the moment we support only the ``yaml`` executor but we are going to implement other ones.
 Feel free to contribute adding more implementations.
 
+
+How to launch tests
+===================
+
+Clone this package and run::
+
+    $ pipenv run tox -epy36
+
 Twitter
 =======
 
