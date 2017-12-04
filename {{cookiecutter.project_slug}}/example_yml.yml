@@ -6,7 +6,7 @@ execution:
   ramp-up: 30s
 scenarios:
   index:
-    default-address: https://www.blazemeter.com/
+    default-address: https://www.blazedemo.com/
     requests:
       - url: /
         method: GET

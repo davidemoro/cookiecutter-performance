@@ -19,6 +19,7 @@ if __name__ == '__main__':
 
     if '{{ cookiecutter.locust }}' != 'y':
         remove_file('example_locust.yml')
+        remove_folder('locust')
 
     if '{{ cookiecutter.jmeter }}' != 'y':
         remove_file('example_jmeter.yml')

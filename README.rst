@@ -65,7 +65,7 @@ where the generated ``example_yml`` has the following content::
 You can launch performance tests on your PC or against the BlazeMeter_ cloud since we are using Taurus_ and
 you can use any supported performance framework or technology supported by Taurus_.
 
-At the moment we support only the ``yaml`` executor but we are going to implement other ones.
+At the moment we support only ``yaml`` and ``locust`` executors but we are going to implement other ones.
 Feel free to contribute adding more implementations.
 
 

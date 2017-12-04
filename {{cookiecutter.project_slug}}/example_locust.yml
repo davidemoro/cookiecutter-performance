@@ -1,0 +1,14 @@
+execution:
+- executor: locust
+  concurrency: 2
+  ramp-up: 1m
+  iterations: 1000
+  scenario: example
+
+scenarios:
+  example:
+    default-address: https://blazedemo.com
+    script: locust/locust_example.py
+modules:
+  cloud:
+    project: {{ cookiecutter.project_name }}
