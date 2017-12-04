@@ -127,4 +127,4 @@ def test_bake_with_defaults_run_tests(cookies):
         assert result.exception is None
 
         run_inside_dir(
-            'tox -epy36 -- example_yml.yml', str(result.project)) == 0
+            'pipenv run tox -epy36 -- example_yml.yml', str(result.project)) == 0
