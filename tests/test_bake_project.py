@@ -78,7 +78,8 @@ def test_bake_with_defaults(cookies):
         assert result.exception is None
 
         found_toplevel_files = [f.basename for f in result.project.listdir()]
-        assert 'requirements.txt' in found_toplevel_files
+        assert 'Pipfile' in found_toplevel_files
+        assert 'Pipfile.lock' in found_toplevel_files
         assert 'tox.ini' in found_toplevel_files
         assert 'example_yml.yml' in found_toplevel_files
         assert 'README.rst' in found_toplevel_files
@@ -102,7 +103,8 @@ def test_bake_with_defaults_extra_context(cookies, default_extra_context):
         assert result.exception is None
 
         found_toplevel_files = [f.basename for f in result.project.listdir()]
-        assert 'requirements.txt' in found_toplevel_files
+        assert 'Pipfile' in found_toplevel_files
+        assert 'Pipfile.lock' in found_toplevel_files
         assert 'tox.ini' in found_toplevel_files
         assert 'example_yml.yml' in found_toplevel_files
         assert 'README.rst' in found_toplevel_files

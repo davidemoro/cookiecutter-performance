@@ -7,8 +7,7 @@ Generate a tox based environment based on Taurus bzt for performance test. Blaze
 
 How to use it::
 
-    $ pip install tox
-    $ tox -epy36 -- example_yml.yml
+    $ pipenv run tox -epy36 -- example_yml.yml
 
 where the generated ``example_yml`` has the following content::
 
