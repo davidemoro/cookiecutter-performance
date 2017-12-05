@@ -1,0 +1,4 @@
+---
+modules:
+  blazemeter:
+    token: {{ cookiecutter.blazemeter_token }}
