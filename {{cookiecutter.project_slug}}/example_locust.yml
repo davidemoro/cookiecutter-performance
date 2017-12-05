@@ -7,7 +7,7 @@ execution:
 scenarios:
   example:
     default-address: https://blazedemo.com
-    script: locust/locust_example.py
+    script: locust/example_locust.py
 modules:
   cloud:
     project: {{ cookiecutter.project_name }}

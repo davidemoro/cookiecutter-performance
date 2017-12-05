@@ -23,3 +23,4 @@ if __name__ == '__main__':
 
     if '{{ cookiecutter.jmeter }}' != 'y':
         remove_file('example_jmeter.yml')
+        remove_folder('jmeter')

@@ -1,0 +1,11 @@
+---
+execution:
+- scenario: jmeter/example_jmeter.jmx
+  concurrency: 2
+  hold-for: 1m
+  ramp-up: 30s
+reporting:
+  - module: junit-xml
+modules:
+  cloud:
+    project: {{ cookiecutter.project_name }}
