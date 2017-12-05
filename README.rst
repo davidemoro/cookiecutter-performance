@@ -20,9 +20,10 @@ Generate a tox based environment based on Taurus_ for performance test. BlazeMet
 This package generates a performance test project containing a working hello world test choosing one
 of the supported technologies with no pain.
 
-How to use it::
+How to use it
+-------------
 
-    $ pip install cookiecutter
+    $ pip install --user cookiecutter
     $ cookiecutter https://github.com/tierratelematics/cookiecutter-performance
     project_name [project name]: my project
     project_slug [removeme]: 
