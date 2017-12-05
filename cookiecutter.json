@@ -4,5 +4,6 @@
   "project_short_description": "tox based environment based on Taurus bzt for performance test. BlazeMeter ready",
   "molotov": "n",
   "locust": "n",
-  "jmeter": "n"
+  "jmeter": "n",
+  "blazemeter_token": ""
 }

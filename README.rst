@@ -30,6 +30,7 @@ How to use it::
     molotov [n]: 
     locust [n]: 
     jmeter [n]:
+    blazemeter_token []:
     $ ls -1 my_project
     example_yml.yml
     README.rst
@@ -61,11 +62,47 @@ where the generated ``example_yml`` has the following content::
 You can launch performance tests on your PC or against the BlazeMeter_ cloud since we are using Taurus_ and
 you can use any supported performance framework or technology supported by Taurus_.
 
+
+.. image:: https://raw.githubusercontent.com/tierratelematics/cookiecutter-performance/develop/docs/_static/bzt.png
+
+
+Examples
+========
+
 At the moment we support only ``yaml``, ``locust`` and ``jmeter`` executors but we are going to implement other ones.
 Feel free to contribute adding more implementations.
 
+Once you generate a new project with one or more performance tests engines, you have to move inside the generated
+project folder and run the corresponding command line example.
 
-.. image:: https://raw.githubusercontent.com/tierratelematics/cookiecutter-performance/develop/docs/_static/bzt.png
+yaml
+----
+
+
+Command line::
+
+    $ pipenv run tox -epy36 -- example_yml.yml
+
+
+jmeter
+------
+
+Command line::
+
+    $ pipenv run tox -epy36 -- example_jmeter.yml
+
+
+locust
+------
+
+Command line::
+
+    $ pipenv run tox -epy36 -- example_locust.yml
+
+molotov
+-------
+
+Not yet supported by ``cookiecutter-performance``
 
 
 How to launch tests
