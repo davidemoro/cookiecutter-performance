@@ -65,6 +65,13 @@ you can use any supported performance framework or technology supported by Tauru
 
 .. image:: https://raw.githubusercontent.com/tierratelematics/cookiecutter-performance/develop/docs/_static/bzt.png
 
+If you provide a ``blazemeter_token`` a git ignored ``.bzt-rc`` will be generated with the following format::
+
+    ---
+    modules:
+      blazemeter:
+        token: YOURTOKEN
+
 
 Examples
 ========
