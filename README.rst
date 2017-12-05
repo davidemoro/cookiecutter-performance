@@ -6,8 +6,8 @@ Generate a tox based environment based on Taurus_ for performance test. BlazeMet
 
 
 .. image:: https://travis-ci.org/tierratelematics/cookiecutter-performance.svg?branch=develop
-          :target: https://travis-ci.org/tierratelematics/cookiecutter-performance
-          :alt: Build Status
+     :target: https://travis-ci.org/tierratelematics/cookiecutter-performance
+     :alt: Build Status
 
 .. image:: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/shield.svg
      :target: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/
@@ -27,10 +27,6 @@ How to use it::
     project_name [project name]: my project
     project_slug [removeme]: 
     project_short_description [tox based environment based on Taurus bzt for performance test. BlazeMeter ready]: 
-    Select command_line_interface:
-    1 - Click
-    2 - No command-line interface
-    Choose from 1, 2 [1]: 
     molotov [n]: 
     locust [n]: 
     jmeter [n]:
