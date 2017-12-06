@@ -23,6 +23,8 @@ of the supported technologies with no pain.
 How to use it
 -------------
 
+::
+
     $ pip install --user cookiecutter
     $ cookiecutter https://github.com/tierratelematics/cookiecutter-performance
     project_name [project name]: my project
