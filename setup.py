@@ -24,7 +24,7 @@ setup(
     description='Generate a tox based environment based on Taurus bzt'
                 ' for performance test. BlazeMeter ready ',
     author='Davide Moro',
-    license='BSD',
+    license='Apache Software License 2.0',
     author_email='davide.moro@gmail.com',
     url='https://github.com/tierratelematics/cookiecutter-performance',
     keywords=['cookiecutter', 'template', 'package', ],
