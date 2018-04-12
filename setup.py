@@ -26,7 +26,7 @@ setup(
     author='Davide Moro',
     license='Apache Software License 2.0',
     author_email='davide.moro@gmail.com',
-    url='https://github.com/tierratelematics/cookiecutter-performance',
+    url='https://github.com/davidemoro/cookiecutter-performance',
     keywords=['cookiecutter', 'template', 'package', ],
     classifiers=[
         'Development Status :: 4 - Beta',

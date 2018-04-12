@@ -5,16 +5,16 @@ cookiecutter-performance
 Generate a tox based environment based on Taurus_ for performance test. BlazeMeter_ ready
 
 
-.. image:: https://travis-ci.org/tierratelematics/cookiecutter-performance.svg?branch=develop
-     :target: https://travis-ci.org/tierratelematics/cookiecutter-performance
+.. image:: https://travis-ci.org/davidemoro/cookiecutter-performance.svg?branch=develop
+     :target: https://travis-ci.org/davidemoro/cookiecutter-performance
      :alt: Build Status
 
-.. image:: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/shield.svg
-     :target: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/
+.. image:: https://pyup.io/repos/github/davidemoro/cookiecutter-performance/shield.svg
+     :target: https://pyup.io/repos/github/davidemoro/cookiecutter-performance/
      :alt: Updates
 
-.. image:: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/python-3-shield.svg
-     :target: https://pyup.io/repos/github/tierratelematics/cookiecutter-performance/
+.. image:: https://pyup.io/repos/github/davidemoro/cookiecutter-performance/python-3-shield.svg
+     :target: https://pyup.io/repos/github/davidemoro/cookiecutter-performance/
      :alt: Python 3
 
 This package generates a performance test project containing a working hello world test choosing one
@@ -26,7 +26,7 @@ How to use it
 ::
 
     $ pip install --user cookiecutter
-    $ cookiecutter https://github.com/tierratelematics/cookiecutter-performance
+    $ cookiecutter https://github.com/davidemoro/cookiecutter-performance
     project_name [project name]: my project
     project_slug [removeme]: 
     project_short_description [tox based environment based on Taurus bzt for performance test. BlazeMeter ready]: 
@@ -66,7 +66,7 @@ You can launch performance tests on your PC or against the BlazeMeter_ cloud sin
 you can use any supported performance framework or technology supported by Taurus_.
 
 
-.. image:: https://raw.githubusercontent.com/tierratelematics/cookiecutter-performance/develop/docs/_static/bzt.png
+.. image:: https://raw.githubusercontent.com/davidemoro/cookiecutter-performance/develop/docs/_static/bzt.png
 
 If you provide a ``blazemeter_token`` a git ignored ``.bzt-rc`` will be generated with the following format::
 
